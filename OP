@@ -1,0 +1,19 @@
+--GAMEPASS --STR
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+
+local function task()
+    local Event = game:GetService("ReplicatedStorage").Remotes.Dumbbell
+    Event:FireServer()
+end
+
+
+while true do
+
+    for i = 1, 5 do
+        task()
+        wait()  
+    end
+    wait(0.485)  
+end
