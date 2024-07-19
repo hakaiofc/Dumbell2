@@ -11,9 +11,9 @@ end
 
 while true do
 
-    for i = 1, 3.5 do
+    for i = 1, 3 do
         task()
         wait()  
     end
-    wait(0.485)  
+    wait(0.900)  
 end
